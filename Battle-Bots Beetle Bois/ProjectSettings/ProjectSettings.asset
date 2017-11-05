@@ -6,11 +6,11 @@ PlayerSettings:
   serializedVersion: 10
   productGUID: cb892a916ccb65e4f84ff85926ee4829
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 0
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: ICS 163 Bois
   productName: Battle-Bots Beetle Bois
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -118,7 +118,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.Company.ProductName
+  bundleIdentifier: com.ICS163.BattleBotBeelteBois
   bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
