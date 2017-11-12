@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fill_bar: {fileID: 114250987371229678, guid: 04c88cf82770fb740a64b6fa7e74704b, type: 2}
-  shouldFill: 1
+  shouldFill: 0
 --- !u!224 &224457585733419856
 RectTransform:
   m_ObjectHideFlags: 1
