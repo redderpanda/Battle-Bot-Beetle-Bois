@@ -10,18 +10,17 @@ public class SliderManager : MonoBehaviour
     void Awake()
     {
         shouldFill = true;
+      //  fill_bar.value = 0;
+        Debug.Log(" the Fill Bar is  " + fill_bar.value);
     }
 
 
     void Update()
     {
-        Debug.Log(shouldFill);
         if (shouldFill)
         {
-            fill_bar.value++;
-            Debug.Log("Fill bar = " + fill_bar.value);
+            fill_bar.value++; 
         }
-
     }
 
 }

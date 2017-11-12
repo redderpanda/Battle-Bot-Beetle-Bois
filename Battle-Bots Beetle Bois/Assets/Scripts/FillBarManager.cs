@@ -11,24 +11,65 @@ public class FillBarManager : MonoBehaviour {
     public GameObject canvas;
     int slider_value;
 
-   public void FillBarPhase()
+    public GameObject Slider;
+    public GameObject SliderButton;
+    public GameObject[] rpsButtons;    // Debug.Log("Test");
+
+
+    public Slider fill_bar;
+    public bool shouldFill = true;
+    void Awake()
     {
-        GameObject S = Instantiate(SliderPrefab) as GameObject;
-        S.transform.SetParent(canvas.transform,false);
-        
-        GameObject slider_button = Instantiate(SliderButtonPrefab) as GameObject;
-        slider_button.transform.SetParent(canvas.transform,false);
+        shouldFill = true;
+        //  fill_bar.value = 0;
+        Debug.Log(" the Fill Bar is  " + fill_bar.value);
+    }
+    void Start()
+    {
+        //   GameObject Slider = GameObject.FindGameObjectWithTag("Slider");
+        Debug.Log("Hello");
+        //  GameObject SliderButton = GameObject.FindGameObjectWithTag("Slider Button");
+        // GameObject[] rpsButtons = GameObject.FindGameObjectsWithTag("RPS Button");
+    }
 
-        GameObject slider_button_manager = Instantiate(SliderButtonManagerPrefab) as GameObject;
-        slider_button_manager.transform.SetParent(canvas.transform,false);
+    public void FillBarPhase()
+    {
+        for (int i = 0; i < rpsButtons.Length; i++)
+        {
 
-        GameObject slider_manager = Instantiate(SliderManagerPrefab) as GameObject;
-        slider_manager.transform.SetParent(canvas.transform,false);
+            rpsButtons[i].SetActive(false);
+        }
+        Slider.SetActive(true);
+        SliderButton.SetActive(true);
+    }
 
-        ScreenManager screen_manager_script = slider_button_manager.GetComponent<ScreenManager>(); // cant set object in script due to instantiating GameObjects vs ScreenManagers
-        //screen_manager_script.slider_m = slider_manager;
+    public void switchActive(bool sliderr,bool buttonss)
+     {
+        for (int i = 0; i < rpsButtons.Length; i++)
+        {
 
+            rpsButtons[i].SetActive(buttonss);
+        }
+        Slider.SetActive(sliderr);
+        SliderButton.SetActive(sliderr);
+    }
 
+    public void screenTouch()
+    {
+
+        shouldFill = false;
 
     }
+
+    void Update()
+    {
+        if (shouldFill)
+        {
+            fill_bar.value++;
+        }
+    }
+
+
+
 }
+
