@@ -526,7 +526,7 @@ MonoBehaviour:
   - {fileID: 301085188}
   - {fileID: 661837087}
   fill_bar: {fileID: 1190876604}
-  shouldFill: 1
+  shouldFill: 0
 --- !u!4 &766517890
 Transform:
   m_ObjectHideFlags: 0
