@@ -24,7 +24,7 @@ public class BBBBBase : MonoBehaviour {
         myIcon.sprite = mySprite;
     }
 
-    int healthCumulative()
+    public int healthCumulative()
     {
         int new_health = health;
         new_health += arms.GetComponent<BBBBArms>().health 
@@ -33,7 +33,7 @@ public class BBBBBase : MonoBehaviour {
         return new_health;
     }
 
-    int defenseCumulative()
+    public int defenseCumulative()
     {
         int new_defense = defense;
         new_defense += arms.GetComponent<BBBBArms>().defense
@@ -42,7 +42,7 @@ public class BBBBBase : MonoBehaviour {
         return new_defense;
     }
 
-    int pinchCumulative()
+    public int pinchCumulative()
     {
         int new_pinch = pinch_stat;
         new_pinch += arms.GetComponent<BBBBArms>().pinch_stat
@@ -51,7 +51,7 @@ public class BBBBBase : MonoBehaviour {
         return new_pinch;
     }
 
-    int liftCumulative()
+    public int liftCumulative()
     {
         int new_lift = lift_stat;
         new_lift += arms.GetComponent<BBBBArms>().lift_stat
@@ -60,7 +60,7 @@ public class BBBBBase : MonoBehaviour {
         return new_lift;
     }
 
-    int stabCumulative()
+    public int stabCumulative()
     {
         int new_stab = stab_stat;
         new_stab += arms.GetComponent<BBBBArms>().stab_stat
