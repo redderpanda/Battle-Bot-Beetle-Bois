@@ -28,14 +28,26 @@ public class HealthBarManager : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
+        current_health = lowerThanZero(current_health);
         health_bar.value = current_health;
-        health_bar_text.text = "HEALTH: " + current_health + "/" + beetleboi.healthCumulative();
+        health_bar_text.text = beetleboi.beetle_name   +  "\nHEALTH: " + current_health + "/" + beetleboi.healthCumulative();
 
+        e_current_health = lowerThanZero(e_current_health);
         e_health_bar.value = e_current_health;
-        e_health_bar_text.text = "HEALTH: " + e_current_health + "/" + e_beetleboi.healthCumulative();
+        e_health_bar_text.text = e_beetleboi.beetle_name +  "\nHEALTH: " + e_current_health + "/" + e_beetleboi.healthCumulative();
 
         current_health--;
         e_current_health--;
 
     }
+
+    int lowerThanZero(int health)
+    {
+        if(health <= 0)
+        {
+            return 0;
+        }
+        return health;
+    }
+
 }
