@@ -21,7 +21,15 @@ public class GameControl : MonoBehaviour
     public string name;
     public int level;
     public int exp;
+    
+    public List<BBBBLegs> Legs = new List<BBBBLegs>();
+    public List<BBBBArms> Arms = new List<BBBBArms>();
+    public List<BBBBBase> Base = new List<BBBBBase>();
+    public List<BBBBWings> Wings = new List<BBBBWings>();
 
+  
+    public GameObject l;
+    
     private void Awake() //There should be only one playerData. If a playerData is made that is not the static currentPlayer, kill it for its existance is blasphemy 
     {
         if (currentPlayer == null)
@@ -43,7 +51,11 @@ public class GameControl : MonoBehaviour
         name = "Player name";
         level = 0;
         exp = 0;
+
         Load();
+     
+       
+        
 
     }
 
@@ -56,6 +68,8 @@ public class GameControl : MonoBehaviour
         data.name = name;
         data.level = level;
         data.exp = exp;
+
+        
         
         bf.Serialize(file,data);
         file.Close();
@@ -71,9 +85,12 @@ public class GameControl : MonoBehaviour
             PlayerData data = (PlayerData)bf.Deserialize(file);
             file.Close();
 
-            level = data.level;
-            name = data.name;
+     level = data.level;
+        name = data.name;
             exp = data.exp;
+
+   //         Legs = data.Legs;
+            
         }
     }
 
@@ -95,4 +112,6 @@ class PlayerData //This class exists to hold the data and then be saved
     public int level;
     public string name;
     public int exp;
+    public List<GameObject> Legs = new List<GameObject>();
+
 }
