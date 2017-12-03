@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HealthBarManager : MonoBehaviour {
 
+    public BattleSystemManager battleManager;
+
     public Slider health_bar;
     public Text health_bar_text;
     public BBBBBase beetleboi;
@@ -39,6 +41,7 @@ public class HealthBarManager : MonoBehaviour {
         current_health--;
         e_current_health--;
 
+        endBattle();
     }
 
     int lowerThanZero(int health)
@@ -48,6 +51,12 @@ public class HealthBarManager : MonoBehaviour {
             return 0;
         }
         return health;
+    }
+
+    void endBattle()
+    {
+        if (e_current_health <= 0 || current_health <= 0)
+            battleManager.currentState = BattleSystemManager.BattleStates.END;
     }
 
 }

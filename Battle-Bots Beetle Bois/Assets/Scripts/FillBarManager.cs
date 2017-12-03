@@ -48,11 +48,18 @@ public class FillBarManager : MonoBehaviour {
     //    }
     //}
 
-    public IEnumerator screenTouch()
-    {
+    public void screenTouch()
+    {   
         shouldFill = false;
         fill_value = fill_bar.value;
-        yield return new WaitForSeconds(3);
+        //yield return new WaitForSeconds(3);
+        Slider.SetActive(false);
+        SliderButton.SetActive(false);
+        fill_bar.value = 0;
+        for (int i = 0; i < rpsButtons.Length; i++)
+        {
+            rpsButtons[i].SetActive(true);
+        }
 
     }
 
