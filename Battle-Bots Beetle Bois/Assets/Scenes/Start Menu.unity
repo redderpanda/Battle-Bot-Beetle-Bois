@@ -641,9 +641,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0160de0bf4c5345aaf8185ebafb049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameStats: {fileID: 1559463796348750, guid: e751f93a012dac24a981f2f22dbd9df2, type: 2}
   name: 
   level: 0
   exp: 0
+  rupees: 0
+  beetleBucks: 0
   Legs:
   - {fileID: 114339233190894712, guid: b271d071133f68f4fb7755d7a80837b4, type: 2}
   Arms:
