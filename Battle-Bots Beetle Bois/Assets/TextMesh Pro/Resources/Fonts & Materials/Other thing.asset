@@ -8,9 +8,9 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: LiberationSans SDF Material
   m_Shader: {fileID: 4800000, guid: cafd18099dfc0114896e0a8b277b81b6, type: 3}
-  m_ShaderKeywords: OUTLINE_ON _EMISSION
-  m_LightmapFlags: 1
-  m_CustomRenderQueue: -1
+  m_ShaderKeywords: OUTLINE_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -28,30 +28,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
-        name: _DetailAlbedoMap
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailMask
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailNormalMap
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _EmissionMap
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
         name: _FaceTex
       second:
         m_Texture: {fileID: 0}
@@ -64,25 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
-        name: _MetallicGlossMap
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _OcclusionMap
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
         name: _OutlineTex
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _ParallaxMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -113,23 +71,11 @@ Material:
         name: _BumpOutline
       second: 0
     - first:
-        name: _BumpScale
-      second: 1
-    - first:
         name: _ColorMask
       second: 15
     - first:
-        name: _Cutoff
-      second: 0.5
-    - first:
-        name: _DetailNormalMapScale
-      second: 1
-    - first:
         name: _Diffuse
       second: 0.5
-    - first:
-        name: _DstBlend
-      second: 0
     - first:
         name: _FaceDilate
       second: 0.357
@@ -139,15 +85,6 @@ Material:
     - first:
         name: _FaceUVSpeedY
       second: 0
-    - first:
-        name: _GlossMapScale
-      second: 1
-    - first:
-        name: _Glossiness
-      second: 0.5
-    - first:
-        name: _GlossyReflections
-      second: 1
     - first:
         name: _GlowInner
       second: 0.05
@@ -173,15 +110,6 @@ Material:
         name: _MaskSoftnessY
       second: 0
     - first:
-        name: _Metallic
-      second: 0
-    - first:
-        name: _Mode
-      second: 0
-    - first:
-        name: _OcclusionStrength
-      second: 1
-    - first:
         name: _OutlineSoftness
       second: 0
     - first:
@@ -192,10 +120,7 @@ Material:
       second: 0
     - first:
         name: _OutlineWidth
-      second: 0.225
-    - first:
-        name: _Parallax
-      second: 0.02
+      second: 0.156
     - first:
         name: _PerspectiveFilter
       second: 0.875
@@ -221,17 +146,8 @@ Material:
         name: _ShaderFlags
       second: 0
     - first:
-        name: _SmoothnessTextureChannel
-      second: 0
-    - first:
-        name: _SpecularHighlights
-      second: 1
-    - first:
         name: _SpecularPower
       second: 2
-    - first:
-        name: _SrcBlend
-      second: 1
     - first:
         name: _Stencil
       second: 0
@@ -254,9 +170,6 @@ Material:
         name: _TextureWidth
       second: 1024
     - first:
-        name: _UVSec
-      second: 0
-    - first:
         name: _UnderlayDilate
       second: 0
     - first:
@@ -267,7 +180,7 @@ Material:
       second: 0
     - first:
         name: _UnderlaySoftness
-      second: 0.243
+      second: 0
     - first:
         name: _VertexOffsetX
       second: 0
@@ -280,19 +193,10 @@ Material:
     - first:
         name: _WeightNormal
       second: 0
-    - first:
-        name: _ZWrite
-      second: 1
     m_Colors:
     - first:
         name: _ClipRect
       second: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - first:
-        name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
-    - first:
-        name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _EnvMatrixRotation
       second: {r: 0, g: 0, b: 0, a: 0}
@@ -361,7 +265,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -667331979, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
-  m_Name: LiberationSans SDF
+  m_Name: Other thing
   m_EditorClassIdentifier: 
   hashCode: 231247347
   material: {fileID: 2180264}

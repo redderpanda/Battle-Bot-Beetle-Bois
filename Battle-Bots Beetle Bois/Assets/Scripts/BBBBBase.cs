@@ -19,6 +19,9 @@ public class BBBBBase : MonoBehaviour {
     public BBBBLegs legs;
     public BBBBWings wings;
 
+    //public BBBBPart testarms;
+
+
     public void SetIcon(Sprite mySprite)
     {
         myIcon.sprite = mySprite;
