@@ -465,7 +465,7 @@ PlayerSettings:
     Collab: 0
     ErrorHub: 0
     Hub: 0
-    UNet: 1
+    UNet: 0
   cloudProjectId: 040f3ace-2a71-48f8-87eb-6549f0e085e5
   projectName: Battle-Bots Beetle Bois
   organizationId: nikhil-sharma-4453774

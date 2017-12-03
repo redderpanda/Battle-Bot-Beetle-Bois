@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class FillBarManager : MonoBehaviour {
    
     public GameObject canvas;
-    int slider_value;
 
     public GameObject Slider;
     public GameObject SliderButton;
@@ -15,8 +14,7 @@ public class FillBarManager : MonoBehaviour {
 
     public Slider fill_bar;
     public bool shouldFill = true;
- 
-   
+    public float fill_value;
 
     public void FillBarPhase()
     {
@@ -29,18 +27,43 @@ public class FillBarManager : MonoBehaviour {
         SliderButton.SetActive(true);
         shouldFill = true;
     }
-    public void screenTouch()
+    //public IEnumerator FillBarPhase()
+    //{
+    //    for (int i = 0; i < rpsButtons.Length; i++)
+    //    {
+
+    //        rpsButtons[i].SetActive(false);
+    //    }
+    //    Slider.SetActive(true);
+    //    SliderButton.SetActive(true);
+    //    shouldFill = true;
+    //    yield return new WaitForSeconds(3);
+    //    Slider.SetActive(false);
+    //    SliderButton.SetActive(false);
+    //    fill_bar.value = 0;
+    //    for (int i = 0; i < rpsButtons.Length; i++)
+    //    {
+
+    //        rpsButtons[i].SetActive(true);
+    //    }
+    //}
+
+    public IEnumerator screenTouch()
     {
         shouldFill = false;
+        fill_value = fill_bar.value;
+        yield return new WaitForSeconds(3);
+
     }
+
     void Update()
     {
         if (shouldFill)
         {
             fill_bar.value++;
         }
-    }
 
+    }
 
 
 }
