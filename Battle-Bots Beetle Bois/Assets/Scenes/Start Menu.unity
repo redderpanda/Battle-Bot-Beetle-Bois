@@ -614,6 +614,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1828155536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1828155538}
+  - component: {fileID: 1828155537}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1828155537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1828155536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa0160de0bf4c5345aaf8185ebafb049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStats: {fileID: 1559463796348750, guid: e751f93a012dac24a981f2f22dbd9df2, type: 2}
+  currentStats: {fileID: 0}
+  name: 
+  level: 0
+  exp: 0
+  rupees: 0
+  beetleBucks: 0
+  Legs:
+  - {fileID: 114339233190894712, guid: b271d071133f68f4fb7755d7a80837b4, type: 2}
+  Arms:
+  - {fileID: 114451961247979754, guid: 6af80f8e530b2e14ca9f658ce3c94bcc, type: 2}
+  Base:
+  - {fileID: 114982770332689592, guid: 4f1e1ba7ee4a33c42aebb96c21d8055a, type: 2}
+  Wings:
+  - {fileID: 114410352864618514, guid: 3de3cba912597cf419376763db799038, type: 2}
+  l: {fileID: 1036285434859908, guid: b271d071133f68f4fb7755d7a80837b4, type: 2}
+--- !u!4 &1828155538
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1828155536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 320, y: 480, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2061890692
 GameObject:
   m_ObjectHideFlags: 0
