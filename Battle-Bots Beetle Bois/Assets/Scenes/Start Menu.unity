@@ -642,6 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStats: {fileID: 1559463796348750, guid: e751f93a012dac24a981f2f22dbd9df2, type: 2}
+  currentStats: {fileID: 0}
   name: 
   level: 0
   exp: 0
