@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BBBBBase : MonoBehaviour {
 
     [SerializeField]
-    private Image myIcon;
+    public Image myIcon;
 
     public string beetle_name;
     public int health = 0;

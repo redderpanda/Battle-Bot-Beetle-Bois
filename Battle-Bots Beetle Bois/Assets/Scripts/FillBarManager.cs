@@ -14,7 +14,9 @@ public class FillBarManager : MonoBehaviour {
 
     public Slider fill_bar;
     public bool shouldFill = true;
-    public float fill_value;
+    public float prev_fill_value = 0;
+
+    public int sweet_spot = 90;
 
     public void FillBarPhase()
     {
@@ -51,8 +53,7 @@ public class FillBarManager : MonoBehaviour {
     public void screenTouch()
     {   
         shouldFill = false;
-        fill_value = fill_bar.value;
-        //yield return new WaitForSeconds(3);
+        prev_fill_value = fill_bar.value;
         Slider.SetActive(false);
         SliderButton.SetActive(false);
         fill_bar.value = 0;
@@ -68,6 +69,11 @@ public class FillBarManager : MonoBehaviour {
         if (shouldFill)
         {
             fill_bar.value++;
+        }
+
+        if(fill_bar.value == 100)
+        {
+            screenTouch();
         }
 
     }
