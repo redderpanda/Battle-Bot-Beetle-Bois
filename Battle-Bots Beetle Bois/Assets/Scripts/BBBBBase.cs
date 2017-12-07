@@ -7,6 +7,7 @@ public class BBBBBase : MonoBehaviour {
 
     [SerializeField]
     public Image myIcon;
+    public Sprite mySprite;
 
     public string beetle_name;
     public int health = 0;

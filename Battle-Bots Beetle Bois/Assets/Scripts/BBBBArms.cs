@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BBBBArms : MonoBehaviour {
 
     [SerializeField]
-    private Image myIcon;
+    public Image myIcon;
 
     public string arm_name;
     public int health = 0;

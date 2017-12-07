@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class BBBBWings : MonoBehaviour {
 
     [SerializeField]
-    private Image myIcon;
+    public Image myIcon;
+
 
     public string wing_name;
     public int health = 0;
