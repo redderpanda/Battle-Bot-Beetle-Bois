@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class BattleSystemManager : MonoBehaviour {
 
     public HealthBarManager healthManager;
+    public BattleAnimationManager animationManager;
     public enum BattleStates
     {
         START,
@@ -81,8 +82,6 @@ public class BattleSystemManager : MonoBehaviour {
                 SceneManager.LoadScene("Inventory");
                 break; // end the map
         }
-
-
     }
 
 
@@ -95,6 +94,8 @@ public class BattleSystemManager : MonoBehaviour {
 
     void DamageCalcWin()
     {
+
+        StartCoroutine(animationManager.e_flash());
         double multiplier = 1;
         int attack_stat = 1; // to choose which stat to use for attack
 
@@ -122,6 +123,8 @@ public class BattleSystemManager : MonoBehaviour {
 
     void DamageCalcLose()
     {
+
+        StartCoroutine(animationManager.flash());
         double multiplier = 1;
         int attack_stat = 1; // to choose which stat to use for attack
 
@@ -158,6 +161,7 @@ public class BattleSystemManager : MonoBehaviour {
         SliderText.GetComponent<Text>().text = closeness + " vs " + e_closeness;
         if (closeness > e_closeness) // player is farther
         {
+            StartCoroutine(animationManager.flash());
             if (playerChoose == (int)elements.Flip)
                 attack_stat = healthManager.e_current_beetleboi.liftCumulative();
             if (playerChoose == (int)elements.Pinch)
@@ -173,6 +177,7 @@ public class BattleSystemManager : MonoBehaviour {
 
         else // player is closer
         {
+            StartCoroutine(animationManager.e_flash());
             if (playerChoose == (int)elements.Flip)
                 attack_stat = healthManager.current_beetleboi.liftCumulative();
             if (playerChoose == (int)elements.Pinch)
@@ -274,5 +279,6 @@ public class BattleSystemManager : MonoBehaviour {
         playerSlider();
         printChoice();
     }
-    // *** REMIND CHRISTOPHE TO BUY APPLE CIDER VINEGAR ***
+    
+    
 }

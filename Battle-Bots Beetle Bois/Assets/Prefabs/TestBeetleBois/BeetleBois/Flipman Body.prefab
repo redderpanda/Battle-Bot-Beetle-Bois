@@ -9,51 +9,52 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1880913299329764}
+  m_RootGameObject: {fileID: 1738096008990720}
   m_IsPrefabParent: 1
---- !u!1 &1880913299329764
+--- !u!1 &1738096008990720
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 224214548874350406}
-  - component: {fileID: 114415962993302552}
+  - component: {fileID: 224166147719639052}
+  - component: {fileID: 114982770332689592}
   m_Layer: 5
-  m_Name: beetleboi
+  m_Name: Flipman Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114415962993302552
+--- !u!114 &114982770332689592
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1880913299329764}
+  m_GameObject: {fileID: 1738096008990720}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6494631ae5761ac49ae9e176b5efd8da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myIcon: {fileID: 0}
-  beetle_name: HERCULES
-  health: 100
-  defense: 11
+  myIcon: {fileID: 114618189882402790, guid: 719ae1fa87dbbe4449120ad9e1c361b1, type: 2}
+  mySprite: {fileID: 21300000, guid: 2a6199ea0b0676c4791d19377ae7dbdc, type: 3}
+  beetle_name: Flipman Body
+  health: 320
+  defense: 12
   pinch_stat: 11
-  lift_stat: 11
+  lift_stat: 12
   stab_stat: 11
   arms: {fileID: 0}
   legs: {fileID: 0}
   wings: {fileID: 0}
---- !u!224 &224214548874350406
+--- !u!224 &224166147719639052
 RectTransform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1880913299329764}
+  m_GameObject: {fileID: 1738096008990720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}

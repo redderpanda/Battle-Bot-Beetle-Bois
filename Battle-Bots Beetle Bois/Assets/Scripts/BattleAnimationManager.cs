@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class BattleAnimationManager : MonoBehaviour {
 
-    public BBBBBase[] player_team = new BBBBBase[3]; // player team
-    public BBBBBase[] enemy_team = new BBBBBase[3]; // enemy team
 
     public HealthBarManager healthBarManager;
 
@@ -32,11 +30,6 @@ public class BattleAnimationManager : MonoBehaviour {
         e_beetle_boi_legs.enabled = true;
         e_beetle_boi_arms.enabled = true;
 
-
-    }
-	
-	// Update is called once per frame
-	void Update () {
         beetleboi_sprite.GetComponent<Image>().sprite = healthBarManager.current_beetleboi.mySprite;
         beetle_boi_wings.GetComponent<Image>().sprite = healthBarManager.current_beetleboi.wings.myIcon.sprite;
         beetle_boi_legs.GetComponent<Image>().sprite = healthBarManager.current_beetleboi.legs.myIcon.sprite;
@@ -46,5 +39,59 @@ public class BattleAnimationManager : MonoBehaviour {
         e_beetle_boi_wings.GetComponent<Image>().sprite = healthBarManager.e_current_beetleboi.wings.myIcon.sprite;
         e_beetle_boi_legs.GetComponent<Image>().sprite = healthBarManager.e_current_beetleboi.legs.myIcon.sprite;
         e_beetle_boi_arms.GetComponent<Image>().sprite = healthBarManager.e_current_beetleboi.arms.myIcon.sprite;
+
+    }
+	
+
+    public void switchBeetle()
+    {
+        beetleboi_sprite.GetComponent<Image>().sprite = healthBarManager.current_beetleboi.mySprite;
+        beetle_boi_wings.GetComponent<Image>().sprite = healthBarManager.current_beetleboi.wings.myIcon.sprite;
+        beetle_boi_legs.GetComponent<Image>().sprite = healthBarManager.current_beetleboi.legs.myIcon.sprite;
+        beetle_boi_arms.GetComponent<Image>().sprite = healthBarManager.current_beetleboi.arms.myIcon.sprite;
+
+    }
+
+    public void e_switchBeetle()
+    {
+        e_beetleboi_sprite.GetComponent<Image>().sprite = healthBarManager.e_current_beetleboi.mySprite;
+        e_beetle_boi_wings.GetComponent<Image>().sprite = healthBarManager.e_current_beetleboi.wings.myIcon.sprite;
+        e_beetle_boi_legs.GetComponent<Image>().sprite = healthBarManager.e_current_beetleboi.legs.myIcon.sprite;
+        e_beetle_boi_arms.GetComponent<Image>().sprite = healthBarManager.e_current_beetleboi.arms.myIcon.sprite;
+
+    }
+
+    public IEnumerator flash()
+    {
+
+        beetleboi_sprite.enabled = false;
+        beetle_boi_wings.enabled = false;
+        beetle_boi_legs.enabled = false;
+        beetle_boi_arms.enabled = false;
+
+        yield return new WaitForSeconds(0.1f);
+
+        beetleboi_sprite.enabled = true;
+        beetle_boi_wings.enabled = true;
+        beetle_boi_legs.enabled = true;
+        beetle_boi_arms.enabled = true;
+
+    }
+
+    public IEnumerator e_flash()
+    {
+
+        e_beetleboi_sprite.enabled = false;
+        e_beetle_boi_wings.enabled = false;
+        e_beetle_boi_legs.enabled = false;
+        e_beetle_boi_arms.enabled = false;
+
+        yield return new WaitForSeconds(0.1f);
+
+        e_beetleboi_sprite.enabled = true;
+        e_beetle_boi_wings.enabled = true;
+        e_beetle_boi_legs.enabled = true;
+        e_beetle_boi_arms.enabled = true;
+
     }
 }

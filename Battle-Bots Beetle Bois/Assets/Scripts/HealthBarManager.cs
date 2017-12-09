@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HealthBarManager : MonoBehaviour {
 
     public BattleSystemManager battleManager;
+    public BattleAnimationManager animationManager;
 
     public BBBBBase [] player_team = new BBBBBase [3]; // player team
     public BBBBBase [] enemy_team = new BBBBBase [3]; // enemy team
@@ -160,6 +161,7 @@ public class HealthBarManager : MonoBehaviour {
         health_bar.maxValue = current_beetleboi.healthCumulative();
 
         current_health = player_c_health[index];
+        animationManager.switchBeetle();
 
     }
 
@@ -177,5 +179,6 @@ public class HealthBarManager : MonoBehaviour {
         e_health_bar.maxValue = e_current_beetleboi.healthCumulative();
 
         e_current_health = enemy_c_health[index];
+        animationManager.e_switchBeetle();
     }
 }
