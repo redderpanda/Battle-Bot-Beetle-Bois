@@ -114,6 +114,7 @@ public class BattleSystemManager : MonoBehaviour {
         else if (closeness > e_closeness)
             multiplier = .5;
 
+        StartCoroutine(animationManager.enemyDamageShow((int)((attack_stat - healthManager.e_current_beetleboi.defense) * multiplier)));
         SliderText.GetComponent<Text>().text = closeness + " vs " + e_closeness;
         DamageText.GetComponent<Text>().text = (attack_stat - healthManager.e_current_beetleboi.defense) + " DAMAGE x " + multiplier;
         healthManager.e_current_health = healthManager.e_current_health - (int)((attack_stat - healthManager.e_current_beetleboi.defense) * multiplier); // deal damage to enemy
@@ -143,6 +144,7 @@ public class BattleSystemManager : MonoBehaviour {
         else if (closeness < e_closeness)
             multiplier = .5;
 
+        StartCoroutine(animationManager.playerDamageShow((int)((attack_stat - healthManager.current_beetleboi.defense) * multiplier)));
         SliderText.GetComponent<Text>().text = closeness + " vs " + e_closeness;
         DamageText.GetComponent<Text>().text = (attack_stat - healthManager.current_beetleboi.defense) + " DAMAGE x " + multiplier;
         healthManager.current_health = healthManager.current_health - (int)((attack_stat - healthManager.current_beetleboi.defense) * multiplier); // deal damage to player
@@ -171,6 +173,7 @@ public class BattleSystemManager : MonoBehaviour {
                 attack_stat = healthManager.e_current_beetleboi.stabCumulative();
             }
 
+            StartCoroutine(animationManager.playerDamageShow((int)((attack_stat - healthManager.current_beetleboi.defense))));
             DamageText.GetComponent<Text>().text = (attack_stat - healthManager.current_beetleboi.defense) + " DAMAGE";
             healthManager.current_health = healthManager.current_health - (attack_stat - healthManager.current_beetleboi.defense); // deal damage to player
         }
@@ -186,6 +189,7 @@ public class BattleSystemManager : MonoBehaviour {
             {
                 attack_stat = healthManager.current_beetleboi.stabCumulative();
             }
+            StartCoroutine(animationManager.enemyDamageShow((int)((attack_stat - healthManager.e_current_beetleboi.defense))));
             DamageText.GetComponent<Text>().text = (attack_stat - healthManager.e_current_beetleboi.defense) + " DAMAGE";
             healthManager.e_current_health = healthManager.e_current_health - (attack_stat - healthManager.e_current_beetleboi.defense); // deal damage to enemy
         }

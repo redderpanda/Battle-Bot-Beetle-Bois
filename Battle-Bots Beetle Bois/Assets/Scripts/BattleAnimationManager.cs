@@ -18,6 +18,11 @@ public class BattleAnimationManager : MonoBehaviour {
     public Image e_beetle_boi_legs;
     public Image e_beetle_boi_arms;
 
+    public Text playerDamageText;
+    public Text enemyDamageText;
+
+    private AudioSource hitSound;
+
     // Use this for initialization
     void Start () {
         beetleboi_sprite.enabled = true;
@@ -93,5 +98,21 @@ public class BattleAnimationManager : MonoBehaviour {
         e_beetle_boi_legs.enabled = true;
         e_beetle_boi_arms.enabled = true;
 
+    }
+
+    public IEnumerator playerDamageShow(int damage)
+    {
+        playerDamageText.enabled = true;
+        playerDamageText.GetComponent<Text>().text = "- " +  damage.ToString();
+        yield return new WaitForSeconds(0.5f);
+        playerDamageText.enabled = false;
+    }
+
+    public IEnumerator enemyDamageShow(int damage)
+    {
+        enemyDamageText.enabled = true;
+        enemyDamageText.GetComponent<Text>().text = "- " + damage.ToString();
+        yield return new WaitForSeconds(0.5f);
+        enemyDamageText.enabled = false;
     }
 }
