@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryManager : MonoBehaviour {
+public class BeetleManager : MonoBehaviour {
     private List<PlayerItem> playerInventory;
 
     [SerializeField]
@@ -21,15 +21,14 @@ public class InventoryManager : MonoBehaviour {
 	void Start () {
         playerInventory = new List<PlayerItem>();
 
-        for (int i = 1; i < 28; i++)
+        for (int i = 1; i < 3; i++)
         {
             PlayerItem newItem = new PlayerItem();
             newItem.iconSprite = iconSprites[Random.Range(0, iconSprites.Length)];
 
             playerInventory.Add(newItem);
         }
-
-        for (int i = 28; i < 50; i++)
+        for(int j = 3; j < 50; j++)
         {
             PlayerItem newItem = new PlayerItem();
             newItem.iconSprite = empty;
