@@ -291,6 +291,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d5adadd41fea5c4fa4c353b8b108378, type: 2}
+  m_RootGameObject: {fileID: 1632422296}
   m_IsPrefabParent: 0
 --- !u!114 &1432206530
 MonoBehaviour:
@@ -452,6 +453,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4fe33eae9e558b34ebf98ab8878f78ef, type: 2}
+  m_RootGameObject: {fileID: 464940027}
   m_IsPrefabParent: 0
 --- !u!1001 &1749734169
 Prefab:
@@ -494,6 +496,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae2dc7f5a498caf4487865dc91e0522a, type: 2}
+  m_RootGameObject: {fileID: 2060734014}
   m_IsPrefabParent: 0
 --- !u!1 &1900661331
 GameObject:
