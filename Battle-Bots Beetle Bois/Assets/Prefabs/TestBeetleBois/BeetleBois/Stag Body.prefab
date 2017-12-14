@@ -40,15 +40,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myIcon: {fileID: 114217601137441932, guid: 817ea69eeddf5084186d3a58b4010a4e, type: 2}
   mySprite: {fileID: 21300000, guid: 3b2035fb697495c4a8275b1ef32b165e, type: 3}
-  beetle_name: Flipman Body
+  beetle_name: Stag Body
   health: 320
   defense: 12
   pinch_stat: 11
   lift_stat: 12
   stab_stat: 11
-  arms: {fileID: 0}
-  legs: {fileID: 0}
-  wings: {fileID: 0}
+  arms: {fileID: 114999688991922328, guid: 6a47eacfaead6044e8661883d6766e37, type: 2}
+  legs: {fileID: 114339233190894712, guid: 2b5cb29dbc888ab4fbdd881b69f15dcd, type: 2}
+  wings: {fileID: 114282891525784990, guid: c64b4d32652ef7942b35299d295ebbec, type: 2}
 --- !u!224 &224166147719639052
 RectTransform:
   m_ObjectHideFlags: 1

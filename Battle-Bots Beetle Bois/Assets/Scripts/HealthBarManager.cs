@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthBarManager : MonoBehaviour {
 
@@ -26,12 +27,12 @@ public class HealthBarManager : MonoBehaviour {
     public int[] enemy_c_health = new int [3];
 
     public Slider health_bar;  // health bar
-    public Text health_bar_text;
+    public TextMeshProUGUI health_bar_text;
     public BBBBBase current_beetleboi;
     public int current_health;
 
     public Slider e_health_bar;  // enemy health bar
-    public Text e_health_bar_text;
+    public TextMeshProUGUI e_health_bar_text;
     public BBBBBase e_current_beetleboi;
     public int e_current_health;
 

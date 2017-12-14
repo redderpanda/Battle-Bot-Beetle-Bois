@@ -16,7 +16,7 @@ public class FillBarManager : MonoBehaviour {
     public bool shouldFill = true;
     public float prev_fill_value = 0;
 
-    public int sweet_spot = 90;
+    public int sweet_spot = 88;
 
     public void FillBarPhase()
     {
