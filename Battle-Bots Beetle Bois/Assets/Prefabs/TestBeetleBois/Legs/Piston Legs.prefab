@@ -42,9 +42,9 @@ MonoBehaviour:
   leg_name: Piston Legs
   health: 25
   defense: 50
-  pinch_stat: 1
+  pinch_stat: 10
   lift_stat: 11
-  stab_stat: 1
+  stab_stat: 10
 --- !u!224 &224305254893560442
 RectTransform:
   m_ObjectHideFlags: 1
@@ -52,7 +52,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1036285434859908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 132.5, y: 835, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

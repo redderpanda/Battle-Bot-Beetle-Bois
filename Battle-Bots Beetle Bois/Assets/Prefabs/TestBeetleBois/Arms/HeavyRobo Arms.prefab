@@ -40,11 +40,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myIcon: {fileID: 114695913398354398, guid: f3069c64623152b41a2f150b74bf2703, type: 2}
   arm_name: HeavyRobo Arms
-  health: 30
-  defense: 20
-  pinch_stat: 100
-  lift_stat: 20
-  stab_stat: 35
+  health: 50
+  defense: 40
+  pinch_stat: 1
+  lift_stat: 120
+  stab_stat: 20
 --- !u!224 &224607067315188028
 RectTransform:
   m_ObjectHideFlags: 1
