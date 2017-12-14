@@ -42,9 +42,9 @@ MonoBehaviour:
   arm_name: Claw Arms
   health: 30
   defense: 20
-  pinch_stat: 120
-  lift_stat: 30
-  stab_stat: 1
+  pinch_stat: 100
+  lift_stat: 20
+  stab_stat: 35
 --- !u!224 &224607067315188028
 RectTransform:
   m_ObjectHideFlags: 1

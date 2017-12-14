@@ -40,10 +40,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myIcon: {fileID: 114695913398354398, guid: f6144ea6f3f8011419191d9bf3ef37a2, type: 2}
   arm_name: Muscle Arms
-  health: 40
-  defense: 30
-  pinch_stat: 40
-  lift_stat: 75
+  health: 30
+  defense: 20
+  pinch_stat: 100
+  lift_stat: 20
   stab_stat: 35
 --- !u!224 &224607067315188028
 RectTransform:

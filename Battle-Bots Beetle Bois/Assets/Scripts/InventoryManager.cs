@@ -15,24 +15,14 @@ public class InventoryManager : MonoBehaviour {
     [SerializeField]
     private Sprite[] iconSprites;
 
-    public Sprite empty;
-
 	// Use this for initialization
 	void Start () {
         playerInventory = new List<PlayerItem>();
 
-        for (int i = 1; i < 28; i++)
+        for (int i = 1; i < 100; i++)
         {
             PlayerItem newItem = new PlayerItem();
             newItem.iconSprite = iconSprites[Random.Range(0, iconSprites.Length)];
-
-            playerInventory.Add(newItem);
-        }
-
-        for (int i = 28; i < 50; i++)
-        {
-            PlayerItem newItem = new PlayerItem();
-            newItem.iconSprite = empty;
 
             playerInventory.Add(newItem);
         }
