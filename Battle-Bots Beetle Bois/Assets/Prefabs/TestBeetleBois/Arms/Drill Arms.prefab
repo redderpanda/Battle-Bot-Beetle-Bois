@@ -42,9 +42,9 @@ MonoBehaviour:
   arm_name: Drill Arms
   health: 30
   defense: 20
-  pinch_stat: 30
-  lift_stat: 1
-  stab_stat: 120
+  pinch_stat: 100
+  lift_stat: 20
+  stab_stat: 35
 --- !u!224 &224607067315188028
 RectTransform:
   m_ObjectHideFlags: 1
