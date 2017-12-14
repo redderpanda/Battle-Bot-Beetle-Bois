@@ -42,10 +42,10 @@ MonoBehaviour:
   mySprite: {fileID: 21300000, guid: 3b2035fb697495c4a8275b1ef32b165e, type: 3}
   beetle_name: Flipman Body
   health: 320
-  defense: 12
-  pinch_stat: 11
-  lift_stat: 12
-  stab_stat: 11
+  defense: 32
+  pinch_stat: 100
+  lift_stat: 32
+  stab_stat: 10
   arms: {fileID: 0}
   legs: {fileID: 0}
   wings: {fileID: 0}
@@ -56,7 +56,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1738096008990720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 132.5, y: 835, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
